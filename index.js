@@ -9,8 +9,6 @@ const port = 3010;
 
 app.use(cors())
 
-app.use(express.static('static'));
-
 app.get('/hotels/sort/pricing', (req, res) => {
   let pricing=req.query.pricing;
   let priceArray=null;
